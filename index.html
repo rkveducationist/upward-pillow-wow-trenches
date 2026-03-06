@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Daily Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="quiz-card">
+
+    <h1>🚀 Java Daily Quiz</h1>
+    <p class="subtitle">Test Your Knowledge</p>
+
+    <!-- Start Section -->
+    <div id="start-section" class="section">
+        <input type="text" id="studentName" placeholder="Enter Your Name">
+        <button onclick="startQuiz()" class="btn-primary">Start Quiz</button>
+    </div>
+
+    <!-- Timer -->
+    <div id="timer" class="timer"></div>
+
+    <!-- Quiz Section -->
+    <div id="quiz-section" class="hide section">
+        <form id="quizForm"></form>
+        <button onclick="submitQuiz()" class="btn-primary">Submit Quiz</button>
+    </div>
+
+    <!-- Result Section -->
+    <div id="result-section" class="hide section">
+        <h2>🎉 Quiz Completed</h2>
+        <p id="resultText"></p>
+        <button onclick="location.reload()" class="btn-secondary">Take Again</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
